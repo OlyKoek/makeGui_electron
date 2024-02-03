@@ -1,0 +1,68 @@
+<!-- <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>ElectronでLinuxコマンドを叩く</title>
+  </head>
+  <body>
+    <h1>ElectronでLinuxコマンドを叩く</h1>
+    <div>
+      <input id="command" type="text" value="dir" placeholder="Linuxコマンド"></input>
+      <button id="run" type="button">実行</button>
+    </div>
+    <div>
+    <textarea id="result" cols="40"></textarea>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html> -->
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>ElectronでLinuxコマンドを叩く</title>
+  </head>
+  <body>
+    <h1>ElectronでLinuxコマンドを叩く</h1>
+        <div class="tab-wrap">
+            
+          
+            <input id="TAB02-01" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-01">ボタン 1</label>
+            <div class="tab-content">
+              <input id="command" type="text" value="dir" placeholder="CMDコマンド"></input>
+              <button id="run" type="button">実行</button>
+              <div>  
+                <textarea id="result" style="overflow-y:scroll;" cols="60" rows="20"></textarea>
+              </div>
+            </div>
+            
+         
+
+          
+            <input id="TAB02-02" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-02">ボタン 2</label>
+            <div class="tab-content">
+                コンテンツ 2
+            </div>
+          
+
+          
+            <input id="TAB02-03" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-03">ボタン 3</label>
+            <div class="tab-content">
+                コンテンツ 3
+            </div>
+          
+
+          
+            <input id="TAB02-04" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-04">ボタン 4</label>
+            <div class="tab-content">
+                コンテンツ 4
+            </div>
+          
+      </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
+
