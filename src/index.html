@@ -1,61 +1,70 @@
-<!-- <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>ElectronでLinuxコマンドを叩く</title>
-  </head>
-  <body>
-    <h1>ElectronでLinuxコマンドを叩く</h1>
-    <div>
-      <input id="command" type="text" value="dir" placeholder="Linuxコマンド"></input>
-      <button id="run" type="button">実行</button>
-    </div>
-    <div>
-    <textarea id="result" cols="40"></textarea>
-    </div>
-    <script src="./renderer.js"></script>
-  </body>
-</html> -->
-
 <html>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
     <link href="./styles.css" rel="stylesheet">
-    <title>ElectronでLinuxコマンドを叩く</title>
+    <title>Shell_GUI</title>
   </head>
   <body>
-    <h1>ElectronでLinuxコマンドを叩く</h1>
+    <h1>SILS_Shell_GUI</h1>
         <div class="tab-wrap">
             
           
-            <input id="TAB02-01" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-01">ボタン 1</label>
+            <input id="TAB02-01" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-01">developper</label>
             <div class="tab-content">
               <input id="command" type="text" value="dir" placeholder="CMDコマンド"></input>
               <button id="run" type="button">実行</button>
               <div>  
-                <textarea id="result" style="overflow-y:scroll;" cols="60" rows="20"></textarea>
+                <textarea id="result" style="overflow-y:scroll;" cols="60" rows="25"></textarea>
               </div>
             </div>
             
-         
-
-          
-            <input id="TAB02-02" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-02">ボタン 2</label>
+            <input id="TAB02-02" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-02">Rrn Gen15 ReSim</label>
             <div class="tab-content">
-                コンテンツ 2
-            </div>
-          
+              <div class="box-017">
+                <div>タイトル</div>
+                <p>見出し風にタイトルを付けたボックス。上枠線とタイトルの色は、サイトのテーマカラーなどに統一するのがおすすめです。</p>
+              </div>
 
+              <ul class="list-6">
+                <li>
+                  <div>
+                    <label for="Log_date">log date:</label>
+                    <input id="LOGDATE" type="text" value="2024_011359" placeholder="Log_date(Ex:2024_011359)"></input>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="commitID">commitID:</label>
+                    <input id="SOFTID"  type="text" value="abcd123" placeholder="commit_ID(Ex:abcd123)"></input>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <label for="version">major version</label>
+                    <select name="version" required>
+                    <option value="">選択してください</option>
+                    <option value="M61">M61</option>
+                    <option value="M71">M71</option>
+                    <option value="M72">M72</option>
+                    </select>
+                  </div>
+                </li>
+              </ul>
+            
+              <label class="toggle-button">
+                <input type="checkbox"/>
+              </label>
+              <button id="run" type="button" class="button-1">ボタンデザイン</button>
+            </div>
+            
           
-            <input id="TAB02-03" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-03">ボタン 3</label>
+            <input id="TAB02-03" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-03">Rrn Gen3 ReSim</label>
             <div class="tab-content">
                 コンテンツ 3
             </div>
           
 
-          
             <input id="TAB02-04" type="radio" name="TAB02" class="tab-switch" /><label class="tab-label" for="TAB02-04">ボタン 4</label>
             <div class="tab-content">
                 コンテンツ 4

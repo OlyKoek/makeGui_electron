@@ -1,3 +1,16 @@
+
+
+.list-6 {
+  width: fit-content;
+  margin: 50px;
+}
+label {
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+}
+
+/* *********** タブ **********　　*/
 .tab-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -51,3 +64,101 @@
   .tab-switch {
     display: none;
   }
+
+/* *********** ボタン **********　　*/
+  .toggle-button {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #dddddd;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+
+.toggle-button:has(:checked) {
+    background-color: #4bd865;
+}
+
+.toggle-button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    content: '';
+    transition: left .4s;
+}
+
+.toggle-button:has(:checked)::after {
+    left: 25px;
+}
+
+.toggle-button input {
+    display: none;
+}
+
+/* *********** Note **********　　*/
+.box-017 {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: .5em 1.5em 1em;
+  border-top: 5px solid #2589d0;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgb(0 0 0 / 20%);
+  background-color: #f2f2f2;
+}
+
+.box-017 > div {
+  margin-bottom: .5em;
+  color: #2589d0;
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.box-017 > p {
+  margin: 0;
+  color: #333;
+}
+
+/* *********** Execute ボタン **********　　*/
+.button-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin:0 auto;
+  padding: .9em 2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #2589d0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.button-1:active{
+  box-shadow:inset -2px -2px 3px #1579c0,
+    inset 2px 2px 3px #041927;
+}
+
+.button-1:hover {
+  background-color: #1579c0;
+}
+
+/* *********** リスト **********　　*/
+.list-6 {
+  list-style-type: none;
+}
+
+.list-6 li {
+  margin-bottom: 5px;
+  padding: .5em .7em;
+  border-left: 5px solid #2589d0;
+  background-color: #f2f2f2;
+  font-weight: 600;
+}
